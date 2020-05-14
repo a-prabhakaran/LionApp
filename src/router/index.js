@@ -42,6 +42,11 @@ export default new Router({
       component: () => import("@/views/dashboard"),
     },
     {
+      path: "/search",
+      name: "search",
+      component: () => import("@/views/search"),
+    },
+    {
       name: "settings",
       path: "/settings",
       component: () => import("@/views/Settings")
