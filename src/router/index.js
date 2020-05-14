@@ -6,7 +6,7 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
-      path: "/",
+      path: "/home",
       component: () => import("@/views/Home"),
       children: [
         {
@@ -35,6 +35,16 @@ export default new Router({
       name: "register",
       path: "/register",
       component: () => import("@/views/Register")
+    },
+    {
+      path: "/dashboard",
+      name: "dashboard",
+      component: () => import("@/views/dashboard"),
+    },
+    {
+      path: "/search",
+      name: "search",
+      component: () => import("@/views/search"),
     },
     {
       name: "settings",
